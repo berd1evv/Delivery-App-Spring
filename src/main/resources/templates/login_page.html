@@ -5,7 +5,7 @@
     <title>Login page</title>
 </head>
 <body>
-<form action="/login" method="post" th:object="${loginRequest}">
+<form action="/main" method="post" th:object="${mainRequest}">
   <h2>Login</h2>
   <p>
     <label for="Login" class="floatLabel">Login</label>
@@ -17,8 +17,10 @@
   </p>
 
   <input type="submit" value="Login" id="submit">
+
   </p>
   <a href="/register">Navigate to Registration page</a>
 </form>
+
 </body>
 </html>

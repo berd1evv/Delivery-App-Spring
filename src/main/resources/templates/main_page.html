@@ -1,0 +1,36 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome, <span th:text="${userLogin}"></span></h1>
+<table class="table table-striped table-responsive-md">
+    <thead>
+    <tr>
+        <th>Good Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>URL</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="good : ${goods}">
+        <p th:text="$good"></p>
+        <td th:text="${good.id}"></td>
+        <td th:text="${student.good_name}"></td>
+        <td th:text="${student.good_description}"></td>
+        <td th:text="${student.photo_url}"></td>
+    </tr>
+    <tr>
+        <td>dffd</td>
+        <td>dfdf</td>
+        <td>dfdf</td>
+        <td>grrg</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
